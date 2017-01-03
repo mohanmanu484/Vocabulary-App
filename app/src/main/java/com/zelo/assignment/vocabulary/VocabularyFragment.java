@@ -51,10 +51,11 @@ public class VocabularyFragment extends BaseFragment implements VocabularyContra
         int id=item.getItemId();
         if(id==R.id.action_settings){
             mPresenter.refreshList();
+            return true;
         }
 
 
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 
     @Override
